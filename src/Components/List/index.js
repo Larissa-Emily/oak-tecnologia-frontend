@@ -27,7 +27,7 @@ export default function List() {
   // Função para buscar os dados da API
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/products");
+      const response = await fetch("https://oak-tecnologia-backend.vercel.app/products");
       if (!response.ok) {
         throw new Error("Erro ao buscar dados");
       }
